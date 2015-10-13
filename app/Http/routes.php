@@ -17,4 +17,4 @@ Route::get('/', function () {
 });
 
 
-Route::get('/helloworld', "HolaMon@hello");
+Route::get('/helloworld', "HolaMonController@hello");
