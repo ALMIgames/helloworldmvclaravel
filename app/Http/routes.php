@@ -11,17 +11,10 @@
 |
 */
 
-use App\HolaMon;
 
 Route::get('/', function () {
     return view('welcome');
 });
 
 
-Route::get('/helloworld', function () {
-
-$model = new HolaMon();
-
-$data["hola"] = $model->getString();
-    return view("holamon", $data);
-});
+Route::get('/helloworld', "HolaMon@hello");
