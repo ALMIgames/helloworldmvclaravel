@@ -20,3 +20,7 @@ Route::get('/', function () {
 Route::get('/helloworld', "HolaMonController@hello");
 
 Route::resource('user', "UserController");
+
+Route::get('/prova1', function () {
+    return 'Hello World';
+});
