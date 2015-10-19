@@ -65,3 +65,25 @@ Route::get('/prova6', function () {
         ->header('Content-Type', $contentType)
         ->header('MyHeader', "Hola!");
 });
+
+
+Route::get('/prova7', function () {
+    $pathToFile = public_path('prova.pdf');
+    return response()->download($pathToFile);
+});
+
+Route::get('/prova8', function () {
+    $pathToFile = public_path('prova.pdf');
+    $name = "nomdelpdf";
+    return response()->download($pathToFile, $name);
+});
+
+Route::get('/prova9', function () {
+    return response()->json([
+        'name' => 'Pepe', 'state' => 'CA']);
+});
+
+Route::get('/prova10', function () {
+    return [
+        'name' => 'Pepe', 'state' => 'CA'];
+});
