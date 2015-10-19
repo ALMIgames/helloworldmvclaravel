@@ -22,5 +22,13 @@ Route::get('/helloworld', "HolaMonController@hello");
 Route::resource('user', "UserController");
 
 Route::get('/prova1', function () {
-    return 'Hello World';
+    return '<h1>Hello World</h1>';
+});
+
+Route::get('/prova2', function () {
+    $content = '<h1>Hello World</h1>';
+    $status = 200;
+    $contentType= "text/html";
+    return response($content, $status)
+        ->header('Content-Type', $contentType);
 });
