@@ -87,3 +87,7 @@ Route::get('/prova10', function () {
     return [
         'name' => 'Pepe', 'state' => 'CA'];
 });
+
+Route::get('/prova11', function () {
+    return redirect('http://www.google.es');
+});
