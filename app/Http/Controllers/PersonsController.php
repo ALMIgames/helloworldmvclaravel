@@ -48,7 +48,7 @@ class PersonsController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        dd($request->input('name'));
     }
 
     /**
@@ -93,6 +93,6 @@ class PersonsController extends Controller
      */
     public function destroy($id)
     {
-        echo "destroyed ok";
+        echo "$id destroyed ok";
     }
 }
