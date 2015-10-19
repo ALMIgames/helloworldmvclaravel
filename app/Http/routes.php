@@ -21,9 +21,10 @@ Route::get('/helloworld', "HolaMonController@hello");
 
 Route::resource('user', "UserController");
 
-Route::get('/prova1', function () {
+Route::any('/prova1', function () {
     return '<h1>Hello World</h1>';
 });
+
 
 Route::get('/prova2', function () {
     $content = '<h1>Hello World</h1>';
@@ -91,3 +92,5 @@ Route::get('/prova10', function () {
 Route::get('/prova11', function () {
     return redirect('http://www.google.es');
 });
+
+Route::resource('persons', 'PersonsController');
