@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Http\Requests;
+use Illuminate\Support\Facades\Input;
 
 class PersonsController extends Controller
 {
@@ -48,7 +49,7 @@ class PersonsController extends Controller
      */
     public function store(Request $request)
     {
-        dd($request->input('name'));
+        dd(Input::input('name'));
     }
 
     /**
