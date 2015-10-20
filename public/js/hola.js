@@ -2,4 +2,6 @@ function hello() {
     console.info("Hola mon!");
 }
 
-hello();
+function bye() {
+    console.info("Adeu mon!");
+}
