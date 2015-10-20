@@ -49,7 +49,7 @@ class PersonsController extends Controller
      */
     public function store(Request $request)
     {
-        dd(Input::input('name'));
+        dd(Input::all());
     }
 
     /**
